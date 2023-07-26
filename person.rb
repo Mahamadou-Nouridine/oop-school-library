@@ -5,6 +5,7 @@ class Person < Nameable
   attr_reader :id
 
   def initialize(age, name = 'unknown', parent_permission: true)
+    super
     @id = Time.new.to_i
     @age = age
     @name = name
@@ -25,4 +26,3 @@ class Person < Nameable
     @age >= 18
   end
 end
-
