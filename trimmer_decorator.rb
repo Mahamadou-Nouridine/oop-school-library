@@ -5,7 +5,7 @@ class TrimmerDecorator < BaseDecorator
     if super.length <= 10
       super
     else
-      super[0..3]
+      super[0..9]
     end
   end
 end
