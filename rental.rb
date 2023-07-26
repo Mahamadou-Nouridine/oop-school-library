@@ -7,12 +7,12 @@ class Rental
     @person = person
   end
 
-  def set_book(book)
+  def add_book(book)
     @book = book
     book.rentals << self unless book.rentals.include?(self)
   end
 
-  def set_person(person)
+  def add_person(person)
     @person = person
     person.rentals << self unless person.rentals.include?(self)
   end
