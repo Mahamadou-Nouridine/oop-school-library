@@ -17,6 +17,3 @@ class Student < Person
     classroom.add_student(self) unless classroom.students.include?(self)
   end
 end
-
-student = Student.new(12, 'claass')
-puts student.classroom
