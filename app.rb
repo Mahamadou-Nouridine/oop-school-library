@@ -106,7 +106,7 @@ class App
           # puts 'Enter date [YYYY-MM-DD]'
           # date = gets.chomp.to_s
           date = get_user_input('Enter date [YYYY-MM-DD]').to_s
-          rental = Rental.new(date, book, person)
+          rental = Rental.new(date, @books[book_number], @people[person_number])
           save_rental_data(@books[book_number], @people[person_number], rental)
         end
       end
